@@ -20,6 +20,7 @@ Special skin to be displayed on a Galaxy S connected with AirDisplay (or any 800
  * Ping
  * Download bandwidth graphic
  * Upload bandwidth graphic
+ * Total downloaded and uploaded
  * 3 drives usage graphic + free space
  * Weather with temperature + icon
  * Clock

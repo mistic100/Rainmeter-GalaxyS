@@ -106,17 +106,25 @@ RegExp=(.*)
 StringIndex=1
 Substitute="":"0.0.0.0"
 
+[MeasurePing]
+Measure=Plugin
+Plugin=PingPlugin
+DestAddress=www.google.com
+UpdateRate=10
+
 [MeasureDownload]
 Measure=NetIn
 
 [MeasureUpload]
 Measure=NetOut
 
-[MeasurePing]
-Measure=Plugin
-Plugin=PingPlugin
-DestAddress=www.google.com
-UpdateRate=10
+[MeasureDownloadTotal]
+Measure=NetIn
+Cumulative=1
+
+[MeasureUploadTotal]
+Measure=NetOut
+Cumulative=1
 
 
 ; ----------------------------------
@@ -236,13 +244,9 @@ Substitute="":"01d"
 ; MISC MEASURES
 ; ----------------------------------
 
-[MeasureHours]
+[MeasureTime]
 Measure=Time
-Format=%H
-
-[MeasureMinutes]
-Measure=Time
-Format=%M
+Format="%H:%M"
 
 [MeasureUptime]
 Measure=Uptime

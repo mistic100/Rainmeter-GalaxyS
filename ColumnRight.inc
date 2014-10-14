@@ -105,6 +105,25 @@ Y=5r
 Autoscale=1
 StringAlign=Right
 
+[MeterDownloadTotal]
+Meter=String
+MeasureName=MeasureDownloadTotal
+Text="%1B"
+MeterStyle=MainTextStyle
+X=545
+Y=5R
+Autoscale=1
+StringAlign=Right
+
+[MeterUploadTotal]
+Meter=String
+MeasureName=MeasureUploadTotal
+Text="%1B"
+MeterStyle=MainTextStyle
+X=565
+Y=0r
+Autoscale=1
+
 
 ; ----------------------------------
 ; HDD DISPLAY
@@ -235,27 +254,20 @@ StringAlign=Right
 ; WEATHER DISPLAY
 ; ----------------------------------
 
-[WeatherIcon]
-Meter=Image
-ImageName=#@#Images\Icons\weather.png
-MeterStyle=MainTextStyle
-X=410
-Y=20R
-
 [MeterWeatherLocation]
 Meter=String
 MeasureName=MeasureWeatherCity
 MeasureName2=MeasureWeatherCountry
 Text="%1, %2"
 MeterStyle=MainTextStyle
-X=5R
-Y=0r
+X=530
+Y=350
 
 [MeterWeatherImage]
 Meter=Image
 MeasureName=MeasureWeatherIcon
 ImageName=#@#Images\Weather#WeatherTheme#\%1.png
-X=450
+X=0r
 Y=0R
 W=90
 H=90
@@ -266,36 +278,50 @@ MeasureName=MeasureWeatherTemp
 Text="%1°C"
 MeterStyle=MainTextStyle
 FontSize=30
-X=10R
-Y=10r
+X=790
+Y=350
+StringAlign=Right
 
 [MeterWeatherDesc]
 Meter=String
 MeasureName=MeasureWeatherDesc
 Text="%1"
 MeterStyle=MainTextStyle
-X=5r
-Y=-10R
+X=0r
+Y=0R
+StringAlign=Right
+ClipString=2
+ClipStringW=145
+ClipStringH=100
 
 
 ; ----------------------------------
 ; TIME DISPLAY
 ; ----------------------------------
 
-[MeterHours]
+[SPLogo]
+Meter=Image
+ImageName=#@#Images\sp.png
+X=372
+Y=340
+W=56
+H=56
+
+[TimeBackground]
+Meter=Image
+SolidColor=255,255,255
+X=320
+Y=405
+W=160
+H=75
+
+[MeterTime]
 Meter=String
-MeasureName=MeasureHours
+MeasureName=MeasureTime
 Text="%1"
 MeterStyle=MainTextStyle
-FontSize=35
-X=500
-Y=15R
-
-[MeterMinutes]
-Meter=String
-MeasureName=MeasureMinutes
-Text=": %1"
-MeterStyle=MainTextStyle
-FontSize=25
-X=0R
-Y=10r
+FontSize=40
+FontColor=0,0,0
+X=400
+Y=414
+StringAlign=Center
