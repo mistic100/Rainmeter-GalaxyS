@@ -1,12 +1,3 @@
-[ColumnLeft]
-Meter=String
-X=0
-Y=0
-W=400
-H=480
-Text=" "
-
-
 ; ----------------------------------
 ; CPU DISPLAY
 ; ----------------------------------
@@ -14,7 +5,7 @@ Text=" "
 ; main line
 [CPUIcon]
 Meter=Image
-ImageName=#@#Images\iconCpu.png
+ImageName=#@#Images\Icons\cpu.png
 X=10
 Y=10
 
@@ -131,7 +122,7 @@ Y=0r
 ; main line
 [RAMIcon]
 Meter=Image
-ImageName=#@#Images\iconRam.png
+ImageName=#@#Images\Icons\ram.png
 X=10
 Y=15R
 
@@ -157,7 +148,7 @@ Y=0r
 
 [SWAPIcon]
 Meter=Image
-ImageName=#@#Images\iconHdd.png
+ImageName=#@#Images\Icons\hdd.png
 X=10
 Y=0R
 
@@ -241,7 +232,7 @@ Y=0r
 ; main line
 [GPUIcon]
 Meter=Image
-ImageName=#@#Images\iconGpu.png
+ImageName=#@#Images\Icons\gpu.png
 X=10
 Y=15R
 
@@ -309,7 +300,7 @@ Y=0r
 
 [UptimeIcon]
 Meter=Image
-ImageName=#@#Images\iconTime.png
+ImageName=#@#Images\Icons\time.png
 MeterStyle=MainTextStyle
 X=10
 Y=15R

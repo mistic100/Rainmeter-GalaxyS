@@ -1,12 +1,3 @@
-[ColumnRight]
-Meter=String
-X=400
-Y=0
-W=400
-H=480
-Text=" "
-
-
 ; ----------------------------------
 ; NETWORK DISPLAY
 ; ----------------------------------
@@ -14,7 +5,7 @@ Text=" "
 ; main line
 [NetworkIcon]
 Meter=Image
-ImageName=#@#Images\iconNetwork.png
+ImageName=#@#Images\Icons\network.png
 MeterStyle=MainTextStyle
 X=410
 Y=10
@@ -39,14 +30,14 @@ StringAlign=Right
 ; download
 [DownloadIcon]
 Meter=Image
-ImageName=#@#Images\iconDownload.png
+ImageName=#@#Images\Icons\download.png
 X=410
 Y=5R
 
 [DownloadBarBackground]
 Meter=Image
-MeterStyle=HorizontalBarDimension | GraphBackgroundStyle
-X=30r
+MeterStyle=HorizontalBarDimension | HorizontalBarBackgroundStyle
+X=35r
 Y=0r
 
 [MeterDownloadBar]
@@ -78,14 +69,14 @@ StringAlign=Right
 ; upload
 [UploadIcon]
 Meter=Image
-ImageName=#@#Images\iconUpload.png
+ImageName=#@#Images\Icons\upload.png
 X=410
 Y=10R
 
 [UploadBarBackground]
 Meter=Image
-MeterStyle=HorizontalBarDimension | GraphBackgroundStyle
-X=30r
+MeterStyle=HorizontalBarDimension | HorizontalBarBackgroundStyle
+X=35r
 Y=0r
 
 [MeterUploadBar]
@@ -129,8 +120,8 @@ Y=40R
 
 [Drive1BarBackground]
 Meter=Image
-MeterStyle=HorizontalBarDimension | GraphBackgroundStyle
-X=30r
+MeterStyle=HorizontalBarDimension | HorizontalBarBackgroundStyle
+X=35r
 Y=-5r
 
 [MeterDrive1Bar]
@@ -169,8 +160,8 @@ Y=15R
 
 [Drive2BarBackground]
 Meter=Image
-MeterStyle=HorizontalBarDimension | GraphBackgroundStyle
-X=30r
+MeterStyle=HorizontalBarDimension | HorizontalBarBackgroundStyle
+X=35r
 Y=-5r
 
 [MeterDrive2Bar]
@@ -209,8 +200,8 @@ Y=15R
 
 [Drive3BarBackground]
 Meter=Image
-MeterStyle=HorizontalBarDimension | GraphBackgroundStyle
-X=30r
+MeterStyle=HorizontalBarDimension | HorizontalBarBackgroundStyle
+X=35r
 Y=-5r
 
 [MeterDrive3Bar]
@@ -246,7 +237,7 @@ StringAlign=Right
 
 [WeatherIcon]
 Meter=Image
-ImageName=#@#Images\iconWeather.png
+ImageName=#@#Images\Icons\weather.png
 MeterStyle=MainTextStyle
 X=410
 Y=20R

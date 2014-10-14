@@ -104,7 +104,7 @@ UpdateRate=3600
 Url=http://icanhazip.com
 RegExp=(.*)
 StringIndex=1
-Substitute="":"N/A"
+Substitute="":"0.0.0.0"
 
 [MeasureDownload]
 Measure=NetIn

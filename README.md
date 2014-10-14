@@ -1,6 +1,6 @@
 # Rainmeter GalaxyS
 
-Special skin to be displayed on a Galaxy S connected with AirDisplay or any 800*480 screen).
+Special skin to be displayed on a Galaxy S connected with AirDisplay (or any 800*480 screen).
 
 **Configure Variables.inc before launching**
 
