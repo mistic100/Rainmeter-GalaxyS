@@ -12,7 +12,7 @@ The script will take control of your mouse and keyboard to configure AirDisplay 
 * **ConnectSleep** number of millisecond to wait for AirDisplay to connect before luanch Rainmeter
 
 ## How to use
-** Launch AirDisplay in the Android device
-** Press Win+A
+* Launch AirDisplay on the Android device
+* Press Win+A
 
 **Don't touch your mouse or keyboard until AirDisplay window is closed.**
