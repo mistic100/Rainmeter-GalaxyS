@@ -299,13 +299,34 @@ ClipStringH=100
 ; TIME DISPLAY
 ; ----------------------------------
 
-[SPLogo]
+[VolumeBackground]
 Meter=Image
-ImageName=#@#Images\sp.png
-X=372
-Y=340
-W=56
-H=56
+SolidColor=#VolumeBarBackgroundColor#
+W=160
+H=1
+X=320
+Y=375
+
+[Volume]
+Meter=Bar
+MeasureName=MeasureVolume
+BarOrientation=Horizontal
+BarColor=#VolumeBarColor#
+W=160
+H=5
+X=0r
+Y=-2r
+
+[VolumeHandlePosition]
+Measure=Calc
+Formula=305 + MeasureVolume / 100 * 160
+
+[VolumeHandle]
+Meter=Image
+ImageName=#@#Images\volume.png
+X=[VolumeHandlePosition]
+Y=-13r
+DynamicVariables=1
 
 [TimeBackground]
 Meter=Image

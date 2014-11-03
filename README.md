@@ -6,7 +6,7 @@ Special skin to be displayed on a Galaxy S connected with AirDisplay (or any 800
 
 ![screenshot](Screenshot.png)
 
-## Features
+## Indicators
 
  * CPU clock + temperature + load
  * Quad core load graphic
@@ -24,6 +24,7 @@ Special skin to be displayed on a Galaxy S connected with AirDisplay (or any 800
  * 3 drives usage graphic + free space
  * Weather with temperature + icon
  * Clock
+ * Volume
  
 ## Requirements
 

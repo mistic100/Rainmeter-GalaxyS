@@ -244,6 +244,10 @@ Substitute="":"01d"
 ; MISC MEASURES
 ; ----------------------------------
 
+[MeasureVolume]
+Measure=Plugin
+Plugin=Win7AudioPlugin
+
 [MeasureTime]
 Measure=Time
 Format="%H:%M"
