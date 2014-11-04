@@ -1,9 +1,9 @@
 ; AirDisplay auto-configurer for Rainmeter GalaxyS
 
 ; Configuration
-AndroidIP = 192.168.0.16 ; configure your router to assign a static IP to your device
+AndroidIP = 192.168.0.16
 RainmeterFolder = C:\Program Files\Rainmeter
-ConnectSleep = 2000 ; number of millisecond to wait for AirDisplay to connect before luanch Rainmeter
+ConnectSleep = 2000
 
 ; ------------------------------------------------------------------------------
 
@@ -64,4 +64,7 @@ If Ready = 1
   
   ; Launch Rainmeter
   Run %RainmeterFolder%\Rainmeter.exe %RainmeterFolder%
+  
+  ; Quit
+  ExitApp
 }
