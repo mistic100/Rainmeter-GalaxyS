@@ -2,9 +2,11 @@
 
 Special skin to be displayed on a Galaxy S connected with AirDisplay (or any 800*480 screen).
 
+![screenshot](Screenshot.png)
+
 **Configure Variables.inc before launching**
 
-![screenshot](Screenshot.png)
+Tweak date format in `Measures.inc` on line 255.
 
 ## Indicators
 
@@ -24,6 +26,7 @@ Special skin to be displayed on a Galaxy S connected with AirDisplay (or any 800
  * 3 drives usage graphic + free space
  * Weather with temperature + icon
  * Clock
+ * Date
  * Volume
  
 ## Requirements

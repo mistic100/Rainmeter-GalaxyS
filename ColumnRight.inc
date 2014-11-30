@@ -135,7 +135,7 @@ Meter=String
 Text=#Drive1#
 MeterStyle=MainTextStyle
 X=410
-Y=40R
+Y=35R
 
 [Drive1BarBackground]
 Meter=Image
@@ -254,21 +254,21 @@ StringAlign=Right
 ; WEATHER DISPLAY
 ; ----------------------------------
 
-[MeterWeatherLocation]
-Meter=String
-MeasureName=MeasureWeatherCity
-MeasureName2=MeasureWeatherCountry
-Text="%1, %2"
-MeterStyle=MainTextStyle
-X=530
-Y=350
+;[MeterWeatherLocation]
+;Meter=String
+;MeasureName=MeasureWeatherCity
+;MeasureName2=MeasureWeatherCountry
+;Text="%1, %2"
+;MeterStyle=MainTextStyle
+;X=530
+;Y=350
 
 [MeterWeatherImage]
 Meter=Image
 MeasureName=MeasureWeatherIcon
 ImageName=#@#Images\Weather#WeatherTheme#\%1.png
-X=0r
-Y=0R
+X=530
+Y=330
 W=90
 H=90
 
@@ -278,9 +278,8 @@ MeasureName=MeasureWeatherTemp
 Text="%1°C"
 MeterStyle=MainTextStyle
 FontSize=30
-X=790
-Y=350
-StringAlign=Right
+X=10R
+Y=5r
 
 [MeterWeatherDesc]
 Meter=String
@@ -289,14 +288,13 @@ Text="%1"
 MeterStyle=MainTextStyle
 X=0r
 Y=0R
-StringAlign=Right
 ClipString=2
 ClipStringW=145
-ClipStringH=100
+ClipStringH=30
 
 
 ; ----------------------------------
-; TIME DISPLAY
+; VOLUME DISPLAY
 ; ----------------------------------
 
 [VolumeBackground]
@@ -328,6 +326,11 @@ X=[VolumeHandlePosition]
 Y=-13r
 DynamicVariables=1
 
+
+; ----------------------------------
+; TIME DISPLAY
+; ----------------------------------
+
 [TimeBackground]
 Meter=Image
 SolidColor=255,255,255
@@ -346,3 +349,14 @@ FontColor=0,0,0
 X=400
 Y=414
 StringAlign=Center
+
+[MeterDate]
+Meter=String
+MeasureName=MeasureDate
+MeterStyle=MainTextStyle
+X=640
+Y=435
+StringAlign=Center
+ClipString=2
+ClipStringW=300
+ClipStringH=30

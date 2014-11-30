@@ -202,19 +202,19 @@ UpdateRate=600
 Url=http://api.openweathermap.org/data/2.5/weather?q=#WeatherQ#&lang=#WeatherLang#&mode=xml&units=metric
 RegExp=(?siU)<city .* name="(.*)">.*<country>(.*)</country>.*<temperature value="(.*)".*<weather .* value="(.*)" icon="(.*)"/>
 
-[MeasureWeatherCity]
-Measure=Plugin
-Plugin=WebParser
-Url=[MeasureWeather]
-StringIndex=1
-Substitute="":"N/A"
+;[MeasureWeatherCity]
+;Measure=Plugin
+;Plugin=WebParser
+;Url=[MeasureWeather]
+;StringIndex=1
+;Substitute="":"N/A"
 
-[MeasureWeatherCountry]
-Measure=Plugin
-Plugin=WebParser
-Url=[MeasureWeather]
-StringIndex=2
-Substitute="":"N/A"
+;[MeasureWeatherCountry]
+;Measure=Plugin
+;Plugin=WebParser
+;Url=[MeasureWeather]
+;StringIndex=2
+;Substitute="":"N/A"
 
 [MeasureWeatherTemp]
 Measure=Plugin
@@ -251,6 +251,12 @@ Plugin=Win7AudioPlugin
 [MeasureTime]
 Measure=Time
 Format="%H:%M"
+
+[MeasureDate]
+Measure=Time
+;Format="%#x"
+Format="%a. %#d %B %Y"
+Substitute="Sun":"Dim","Mon":"Lun","Thu":"Mar","Wed":"Mer","Thu":"Jeu","Fri":"Ven","Sat":"Sam","Jan":"Jan","Feb":"Fév","Mar":"Mars","Apr":"Avril","May":"Mai","Jun":"Juin","Jul":"Juil","Aug":"Août","Sep":"Sept","Oct":"Oct","Nov":"Nov","Dec":"Dec","Sunday":"Dimanche","Monday":"Lundi","Tuesday":"Mardi","Wednesday":"Mercredi","Thursay":"Jeudi","Friday":"Vendredi","Saturday":"Samedi","January":"Janvier","February":"Février","March":"Mars","April":"Avril","May":"Mai","June":"Juin","July":"Juillet","August":"Août","September":"Septembre","October":"Octobre","November":"Novembre","December":"Décembre"
 
 [MeasureUptime]
 Measure=Uptime
