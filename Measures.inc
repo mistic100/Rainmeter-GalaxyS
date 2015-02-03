@@ -256,7 +256,7 @@ Format="%H:%M"
 Measure=Time
 ;Format="%#x"
 Format="%a. %#d %B %Y"
-Substitute="Sun":"Dim","Mon":"Lun","Thu":"Mar","Wed":"Mer","Thu":"Jeu","Fri":"Ven","Sat":"Sam","Jan":"Jan","Feb":"Fév","Mar":"Mars","Apr":"Avril","May":"Mai","Jun":"Juin","Jul":"Juil","Aug":"Août","Sep":"Sept","Oct":"Oct","Nov":"Nov","Dec":"Dec","Sunday":"Dimanche","Monday":"Lundi","Tuesday":"Mardi","Wednesday":"Mercredi","Thursay":"Jeudi","Friday":"Vendredi","Saturday":"Samedi","January":"Janvier","February":"Février","March":"Mars","April":"Avril","May":"Mai","June":"Juin","July":"Juillet","August":"Août","September":"Septembre","October":"Octobre","November":"Novembre","December":"Décembre"
+Substitute="January":"Janvier","February":"Février","March":"Mars","April":"Avril","May":"Mai","June":"Juin","July":"Juillet","August":"Août","September":"Septembre","October":"Octobre","November":"Novembre","December":"Décembre","Sunday":"Dimanche","Monday":"Lundi","Tuesday":"Mardi","Wednesday":"Mercredi","Thursay":"Jeudi","Friday":"Vendredi","Saturday":"Samedi","Jan":"Jan","Feb":"Fév","Mar":"Mars","Apr":"Avril","May":"Mai","Jun":"Juin","Jul":"Juil","Aug":"Août","Sep":"Sept","Oct":"Oct","Nov":"Nov","Dec":"Dec","Sun":"Dim","Mon":"Lun","Tue":"Mar","Wed":"Mer","Thu":"Jeu","Fri":"Ven","Sat":"Sam"
 
 [MeasureUptime]
 Measure=Uptime
