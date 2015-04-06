@@ -23,19 +23,21 @@ Processor=3
 Measure=CPU
 Processor=4
 
-; Clock (CoreTemp)
+; Clock (OHM)
 [MeasureCPUClock]
 Measure=Plugin
-Plugin=CoreTemp
-CoreTempType=CpuSpeed
-CoreTempIndex=0
+Plugin=Plugins\OpenHardwareMonitorPlugin.dll
+Hardware=#MCPU#
+Type=Clocks
+Sensor=CPU Core #1
 
-; Temp (CoreTemp)
+; Temp (OHM)
 [MeasureCPUTemp]
 Measure=Plugin
-Plugin=CoreTemp
-CoreTempType=Temperature
-CoreTempIndex=0
+Plugin=Plugins\OpenHardwareMonitorPlugin.dll
+Hardware=#MCPU#
+Type=Temperatures
+Sensor=CPU Package
 
 
 ; ----------------------------------

@@ -32,7 +32,6 @@ Tweak date format in `Measures.inc` on line 255.
 ## Requirements
 
  * Rainmeter 3.2
- * CoreTemp
  * Open Hardware Monitor
  
 
