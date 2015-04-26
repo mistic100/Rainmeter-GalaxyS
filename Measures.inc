@@ -250,6 +250,14 @@ Substitute="":"00"
 Measure=Plugin
 Plugin=Win7AudioPlugin
 
+[MeasureVolumeValue]
+Measure=Calc
+Formula=MeasureVolume
+Substitute="-1":"0"
+IfCondition=MeasureVolumeValue>0
+IfTrueAction=[!SetOption VolumeHandle ImageName #@#Images\volume.png][!ShowMeter VolumeValue]
+IfFalseAction=[!SetOption VolumeHandle ImageName #@#Images\volume_off.png][!HideMeter VolumeValue]
+
 [MeasureTime]
 Measure=Time
 Format="%H:%M"

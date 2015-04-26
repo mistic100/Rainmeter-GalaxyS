@@ -31,8 +31,8 @@ Meter=String
 MeasureName=MeasureCPUUsage
 Text="%1 %"
 MeterStyle=MainTextStyle
-StringAlign=Right
-X=380
+StringAlign=Left
+X=280
 Y=0r
 
 ; graph
@@ -142,8 +142,8 @@ MeasureName=MeasureRAMUsage
 Percentual=1
 Text="%1 %"
 MeterStyle=MainTextStyle
-StringAlign=Right
-X=380
+StringAlign=Left
+X=280
 Y=0r
 
 [SWAPIcon]
@@ -168,8 +168,8 @@ MeasureName=MeasureSWAPUsage
 Percentual=1
 Text="%1 %"
 MeterStyle=MainTextStyle
-StringAlign=Right
-X=380
+StringAlign=Left
+X=280
 Y=0r
 
 ; graph (need to be separated because not the same scale)
@@ -259,8 +259,8 @@ MeasureName=MeasureGPUUsage
 Percentual=1
 Text="%1 %"
 MeterStyle=MainTextStyle
-StringAlign=Right
-X=380
+StringAlign=Left
+X=280
 Y=0r
 
 ; graph
@@ -303,7 +303,7 @@ Meter=Image
 ImageName=#@#Images\Icons\time.png
 MeterStyle=MainTextStyle
 X=10
-Y=15R
+Y=25R
 
 [MeterUptime]
 Meter=String
