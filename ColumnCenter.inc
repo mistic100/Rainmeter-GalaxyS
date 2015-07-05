@@ -13,6 +13,7 @@ Y=375
 [Volume]
 Meter=Bar
 MeasureName=MeasureVolume
+UpdateDivider=1
 BarOrientation=Horizontal
 BarColor=#VolumeBarColor#
 W=160
@@ -22,6 +23,7 @@ Y=-2r
 
 [VolumeHandlePosition]
 Measure=Calc
+UpdateDivider=1
 Formula=305 + MeasureVolume / 100 * 160
 
 [VolumeHandle]
@@ -30,9 +32,11 @@ ImageName=#@#Images\volume.png
 X=[VolumeHandlePosition]
 Y=-13r
 DynamicVariables=1
+UpdateDivider=1
 
 [VolumeTextPosition]
 Measure=Calc
+UpdateDivider=1
 Formula=320 + MeasureVolume / 100 * 160
 
 [VolumeValue]
@@ -44,6 +48,7 @@ StringAlign=Center
 X=[VolumeTextPosition]
 Y=-15r
 DynamicVariables=1
+UpdateDivider=1
 
 
 ; ----------------------------------

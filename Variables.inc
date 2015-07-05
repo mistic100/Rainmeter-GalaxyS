@@ -3,7 +3,7 @@
 ; CPU name in Open Hardware Monitor
 MCPU=Intel Core i5-4670K
 ; GPU name in Open Hardware Monitor
-MGPU=NVIDIA GeForce GTX 660
+MGPU=NVIDIA GeForce GTX 970
 
 ; Query for http://openweathermap.org
 WeatherQ=Lyon,fr

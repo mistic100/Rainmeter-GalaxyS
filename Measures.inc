@@ -249,10 +249,12 @@ Substitute="":"00"
 [MeasureVolume]
 Measure=Plugin
 Plugin=Win7AudioPlugin
+UpdateDivider=1
 
 [MeasureVolumeValue]
 Measure=Calc
 Formula=MeasureVolume
+UpdateDivider=1
 Substitute="-1":"0"
 IfCondition=MeasureVolumeValue>0
 IfTrueAction=[!SetOption VolumeHandle ImageName #@#Images\volume.png][!ShowMeter VolumeValue]
