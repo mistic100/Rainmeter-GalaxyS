@@ -202,7 +202,7 @@ Measure=Plugin
 Plugin=WebParser
 UpdateRate=600
 Url=http://api.openweathermap.org/data/2.5/weather?q=#WeatherQ#&lang=#WeatherLang#&mode=xml&units=metric
-RegExp=(?siU)<city .* name="(.*)">.*<country>(.*)</country>.*<temperature value="(.*)".*<weather .* value="(.*)" icon="(.*)"/>
+RegExp=(?siU)<city.*name="(.*)">.*<country>(.*)</country>.*<temperature value="(.*)".*<weather.*value="(.*)" icon="(.*)"></weather>
 
 ;[MeasureWeatherCity]
 ;Measure=Plugin
@@ -267,13 +267,7 @@ Format="%H:%M"
 [MeasureDate]
 Measure=Time
 Format="%a. %#d %B %Y"
-Substitute="January":"Janvier","February":"Février","March":"Mars","April":"Avril","May":"Mai","June":"Juin","July":"Juillet","August":"Août","September":"Septembre","October":"Octobre","November":"Novembre","December":"Décembre","Sun":"Dim","Mon":"Lun","Tue":"Mar","Wed":"Mer","Thu":"Jeu","Fri":"Ven","Sat":"Sam"
-
-; Because Substitute does not stop at first match, we cannot mix long and short names
-;"January":"Janvier","February":"Février","March":"Mars","April":"Avril","May":"Mai","June":"Juin","July":"Juillet","August":"Août","September":"Septembre","October":"Octobre","November":"Novembre","December":"Décembre"
-;"Jan":"Jan","Feb":"Fév","Mar":"Mars","Apr":"Avril","May":"Mai","Jun":"Juin","Jul":"Juil","Aug":"Août","Sep":"Sept","Oct":"Oct","Nov":"Nov","Dec":"Dec"
-;"Sunday":"Dimanche","Monday":"Lundi","Tuesday":"Mardi","Wednesday":"Mercredi","Thursay":"Jeudi","Friday":"Vendredi","Saturday":"Samedi"
-;"Sun":"Dim","Mon":"Lun","Tue":"Mar","Wed":"Mer","Thu":"Jeu","Fri":"Ven","Sat":"Sam"
+Substitute=#DateTranslation#
 
 [MeasureUptime]
 Measure=Uptime

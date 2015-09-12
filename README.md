@@ -6,8 +6,6 @@ Special skin to be displayed on a Galaxy S connected with AirDisplay (or any 800
 
 **Configure Variables.inc before launching**
 
-Tweak date format in `Measures.inc` on line 255.
-
 ## Indicators
 
  * CPU clock + temperature + load
