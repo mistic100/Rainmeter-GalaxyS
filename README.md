@@ -20,12 +20,13 @@ Special skin to be displayed on a Galaxy S connected with AirDisplay (or any 800
  * Ping
  * Download bandwidth graphic
  * Upload bandwidth graphic
- * Total downloaded and uploaded
+ * ~~Total downloaded and uploaded~~ (falsy because AirDisplay bandwidth usage)
+ * Top processes by CPU and RAM usage
  * 3 drives usage graphic + free space
  * Weather with temperature + icon
- * Clock
  * Date
  * Volume
+ * Clock
  
 ## Requirements
 

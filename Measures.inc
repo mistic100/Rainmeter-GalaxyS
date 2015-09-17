@@ -96,6 +96,74 @@ Sensor=GPU Core
 
 
 ; ----------------------------------
+; TOP PROCESSES MEASURES
+; ----------------------------------
+
+[MeasureTopMain]
+Measure=Plugin
+Plugin=Plugins\TopProcesses.dll
+ReQuery=1
+GlobalIgnoredProcesses=Idle|%Total|rundll32|wscript|userinit|dwm|Rainmeter|svchost*|System
+UpdateDivider=30
+
+[MeasureTopCPUValue1]
+Measure=Plugin
+Plugin=Plugins\TopProcesses.dll
+MetricType=CPU
+ProcNums=0
+Format="%RawCPU"
+
+[MeasureTopCPUValue2]
+Measure=Plugin
+Plugin=Plugins\TopProcesses.dll
+MetricType=CPU
+ProcNums=1
+Format="%RawCPU"
+
+[MeasureTopCPUName1]
+Measure=Plugin
+Plugin=Plugins\TopProcesses.dll
+MetricType=CPU
+ProcNums=0
+Format="%pName"
+
+[MeasureTopCPUName2]
+Measure=Plugin
+Plugin=Plugins\TopProcesses.dll
+MetricType=CPU
+ProcNums=1
+Format="%pName"
+
+[MeasureTopMemValue1]
+Measure=Plugin
+Plugin=Plugins\TopProcesses.dll
+MetricType=Memory
+ProcNums=0
+Format="%RawMemory"
+
+[MeasureTopMemValue2]
+Measure=Plugin
+Plugin=Plugins\TopProcesses.dll
+MetricType=Memory
+ProcNums=1
+Format="%RawMemory"
+
+[MeasureTopMemName1]
+Measure=Plugin
+Plugin=Plugins\TopProcesses.dll
+MetricType=Memory
+ProcNums=0
+Format="%pName"
+
+[MeasureTopMemName2]
+Measure=Plugin
+Plugin=Plugins\TopProcesses.dll
+MetricType=Memory
+ProcNums=1
+Format="%pName"
+
+
+; ----------------------------------
 ; NETWORK MEASURES
 ; ----------------------------------
 
@@ -120,13 +188,13 @@ Measure=NetIn
 [MeasureUpload]
 Measure=NetOut
 
-[MeasureDownloadTotal]
-Measure=NetIn
-Cumulative=1
+;[MeasureDownloadTotal]
+;Measure=NetIn
+;Cumulative=1
 
-[MeasureUploadTotal]
-Measure=NetOut
-Cumulative=1
+;[MeasureUploadTotal]
+;Measure=NetOut
+;Cumulative=1
 
 
 ; ----------------------------------
