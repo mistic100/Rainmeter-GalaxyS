@@ -21,8 +21,7 @@ Y=0r
 Meter=String
 MeasureName=MeasureCPUTemp
 Text="%1°C"
-MeterStyle=MainTextStyle
-StringAlign=Right
+MeterStyle=MainTextStyle | RightTextStyle
 X=275
 Y=0r
 
@@ -31,7 +30,6 @@ Meter=String
 MeasureName=MeasureCPUUsage
 Text="%1 %"
 MeterStyle=MainTextStyle
-StringAlign=Left
 X=280
 Y=0r
 
@@ -142,7 +140,6 @@ MeasureName=MeasureRAMUsage
 Percentual=1
 Text="%1 %"
 MeterStyle=MainTextStyle
-StringAlign=Left
 X=280
 Y=0r
 
@@ -168,7 +165,6 @@ MeasureName=MeasureSWAPUsage
 Percentual=1
 Text="%1 %"
 MeterStyle=MainTextStyle
-StringAlign=Left
 X=280
 Y=0r
 
@@ -248,8 +244,7 @@ Y=0r
 Meter=String
 MeasureName=MeasureGPUTemp
 Text="%1°C"
-MeterStyle=MainTextStyle
-StringAlign=Right
+MeterStyle=MainTextStyle | RightTextStyle
 X=275
 Y=0r
 
@@ -259,7 +254,6 @@ MeasureName=MeasureGPUUsage
 Percentual=1
 Text="%1 %"
 MeterStyle=MainTextStyle
-StringAlign=Left
 X=280
 Y=0r
 
@@ -301,7 +295,6 @@ Y=0r
 [UptimeIcon]
 Meter=Image
 ImageName=#@#Images\Icons\time.png
-MeterStyle=MainTextStyle
 X=10
 Y=25R
 

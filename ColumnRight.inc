@@ -6,7 +6,6 @@
 [NetworkIcon]
 Meter=Image
 ImageName=#@#Images\Icons\network.png
-MeterStyle=MainTextStyle
 X=410
 Y=10
 
@@ -60,11 +59,10 @@ Y=0r
 Meter=String
 MeasureName=MeasureDownload
 Text="%1B/s"
-MeterStyle=MainTextStyle
+Autoscale=1
+MeterStyle=MainTextStyle | RightTextStyle
 X=790
 Y=5r
-Autoscale=1
-StringAlign=Right
 
 ; upload
 [UploadIcon]
@@ -99,30 +97,28 @@ Y=0r
 Meter=String
 MeasureName=MeasureUpload
 Text="%1B/s"
-MeterStyle=MainTextStyle
+Autoscale=1
+MeterStyle=MainTextStyle | RightTextStyle
 X=790
 Y=5r
-Autoscale=1
-StringAlign=Right
 
 ;[MeterDownloadTotal]
 ;Meter=String
 ;MeasureName=MeasureDownloadTotal
 ;Text="%1B"
-;MeterStyle=MainTextStyle
+;Autoscale=1
+;MeterStyle=MainTextStyle | RightTextStyle
 ;X=545
 ;Y=5R
-;Autoscale=1
-;StringAlign=Right
 
 ;[MeterUploadTotal]
 ;Meter=String
 ;MeasureName=MeasureUploadTotal
 ;Text="%1B"
+;Autoscale=1
 ;MeterStyle=MainTextStyle
 ;X=565
 ;Y=0r
-;Autoscale=1
 
 
 ; ----------------------------------
@@ -132,19 +128,15 @@ StringAlign=Right
 [TopIcon]
 Meter=Image
 ImageName=#@#Images\Icons\top.png
-MeterStyle=MainTextStyle
 X=545
 Y=15R
 
 [TopCPUValue1]
 Meter=String
 MeasureName=MeasureTopCPUValue1
-MeterStyle=MainTextStyle
-FontSize=14
-FontColor=#Grey#
-StringAlign=Right
 Scale=100.0
 Text="%1 %"
+MeterStyle=MainTextStyle | SmallTextStyle | RightTextStyle
 X=-5r
 Y=5r
 H=30
@@ -152,12 +144,9 @@ H=30
 [TopCPUValue2]
 Meter=String
 MeasureName=MeasureTopCPUValue2
-MeterStyle=MainTextStyle
-FontSize=14
-FontColor=#Grey#
-StringAlign=Right
 Scale=100.0
 Text="%1 %"
+MeterStyle=MainTextStyle | SmallTextStyle | RightTextStyle
 X=0r
 Y=30r
 H=30
@@ -165,8 +154,7 @@ H=30
 [TopCPUName1]
 Meter=String
 MeasureName=MeasureTopCPUName1
-MeterStyle=MainTextStyle
-StringAlign=Right
+MeterStyle=MainTextStyle | RightTextStyle
 ClipString=1
 W=130
 H=30
@@ -176,8 +164,7 @@ Y=-35r
 [TopCPUName2]
 Meter=String
 MeasureName=MeasureTopCPUName2
-MeterStyle=MainTextStyle
-StringAlign=Right
+MeterStyle=MainTextStyle | RightTextStyle
 ClipString=1
 W=130
 H=30
@@ -188,11 +175,8 @@ Y=30r
 Meter=String
 MeasureName=MeasureTopMemValue1
 AutoScale=1
-MeterStyle=MainTextStyle
-FontSize=14
-FontColor=#Grey#
-StringAlign=Right
 Text="%1B"
+MeterStyle=MainTextStyle | SmallTextStyle | RightTextStyle
 X=660
 Y=-25r
 H=30
@@ -201,11 +185,8 @@ H=30
 Meter=String
 MeasureName=MeasureTopMemValue2
 AutoScale=1
-MeterStyle=MainTextStyle
-FontSize=14
-FontColor=#Grey#
-StringAlign=Right
 Text="%1B"
+MeterStyle=MainTextStyle | SmallTextStyle | RightTextStyle
 X=0r
 Y=30r
 H=30
@@ -269,11 +250,10 @@ Y=0r
 Meter=String
 MeasureName=MeasureDrive1Free
 Text="%1B"
-MeterStyle=MainTextStyle
+Autoscale=1
+MeterStyle=MainTextStyle | RightTextStyle
 X=790
 Y=5r
-Autoscale=1
-StringAlign=Right
 
 ; drive 2
 [Drive2Label]
@@ -309,11 +289,10 @@ Y=0r
 Meter=String
 MeasureName=MeasureDrive2Free
 Text="%1B"
-MeterStyle=MainTextStyle
+Autoscale=1
+MeterStyle=MainTextStyle | RightTextStyle
 X=790
 Y=5r
-Autoscale=1
-StringAlign=Right
 
 ; drive 3
 [Drive3Label]
@@ -349,11 +328,10 @@ Y=0r
 Meter=String
 MeasureName=MeasureDrive3Free
 Text="%1B"
-MeterStyle=MainTextStyle
+Autoscale=1
+MeterStyle=MainTextStyle | RightTextStyle
 X=790
 Y=5r
-Autoscale=1
-StringAlign=Right
 
 
 ; ----------------------------------
@@ -392,8 +370,8 @@ Meter=String
 MeasureName=MeasureWeatherDesc
 Text="%1"
 MeterStyle=MainTextStyle
+ClipString=2
 X=0r
 Y=0R
-ClipString=2
-ClipStringW=145
-ClipStringH=30
+W=145
+H=30

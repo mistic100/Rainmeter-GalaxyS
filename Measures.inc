@@ -112,6 +112,7 @@ Plugin=Plugins\TopProcesses.dll
 MetricType=CPU
 ProcNums=0
 Format="%RawCPU"
+MaxValue=10000
 
 [MeasureTopCPUValue2]
 Measure=Plugin
@@ -119,6 +120,7 @@ Plugin=Plugins\TopProcesses.dll
 MetricType=CPU
 ProcNums=1
 Format="%RawCPU"
+MaxValue=10000
 
 [MeasureTopCPUName1]
 Measure=Plugin
