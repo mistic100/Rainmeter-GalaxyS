@@ -350,11 +350,13 @@ Y=5r
 [MeterWeatherImage]
 Meter=Image
 MeasureName=MeasureWeatherIcon
+DynamicVariables=1
 ImageName=#@#Images\Weather#WeatherTheme#\%1.png
 X=530
 Y=340
 W=90
 H=90
+LeftMouseUpAction=[!SetVariable WeatherTheme (1-#WeatherTheme#)][!WriteKeyValue Variables WeatherTheme (1-#WeatherTheme#) "Variables.inc"]
 
 [MeterWeatherTemp]
 Meter=String
