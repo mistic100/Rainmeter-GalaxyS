@@ -271,7 +271,7 @@ MaxValue=10000000
 Measure=Plugin
 Plugin=WebParser
 UpdateRate=600
-Url=http://api.openweathermap.org/data/2.5/weather?q=#WeatherQ#&lang=#WeatherLang#&mode=xml&units=metric
+Url=http://api.openweathermap.org/data/2.5/weather?q=#WeatherQ#&lang=#WeatherLang#&mode=xml&units=metric&appid=#WeatherApiKey#
 RegExp=(?siU)<city.*name="(.*)">.*<country>(.*)</country>.*<temperature value="(.*)".*<weather.*value="(.*)" icon="(.*)"></weather>
 
 ;[MeasureWeatherCity]
@@ -333,6 +333,10 @@ IfFalseAction=[!SetOption VolumeHandle ImageName #@#Images\volume_off.png][!Hide
 [MeasureTime]
 Measure=Time
 Format="%H:%M"
+
+[MeasureTimeFull]
+Measure=Time
+Format="%H:%M:%S"
 
 [MeasureDate]
 Measure=Time

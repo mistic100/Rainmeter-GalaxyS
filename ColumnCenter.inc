@@ -55,18 +55,18 @@ Y=-15r
 ; TIME DISPLAY
 ; ----------------------------------
 
-[TimeBackground]
+[ClockBackground]
 Meter=Image
 SolidColor=255,255,255
 X=320
 Y=405
 W=160
 H=75
+LeftMouseUpAction=[!ShowMeterGroup "FullClock"]
 
-[MeterTime]
+[MeterClock]
 Meter=String
 MeasureName=MeasureTime
-Text="%1"
 MeterStyle=MainTextStyle
 StringAlign=Center
 FontSize=40
@@ -84,3 +84,25 @@ X=640
 Y=435
 W=300
 H=30
+
+[FullClockBackground]
+Meter=Image
+SolidColor=0,0,0
+X=0
+Y=0
+W=800
+H=480
+Group=FullClock
+Hidden=1
+LeftMouseUpAction=[!HideMeterGroup "FullClock"]
+
+[FullMeterClock]
+Meter=String
+MeasureName=MeasureTimeFull
+MeterStyle=MainTextStyle
+StringAlign=Center
+FontSize=140
+X=400
+Y=130
+Group=FullClock
+Hidden=1

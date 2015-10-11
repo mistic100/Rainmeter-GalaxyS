@@ -7,15 +7,20 @@ MGPU=NVIDIA GeForce GTX 970
 
 ; CPU mode (0=bar graphs, 1=pie charts)
 ; You can also click on the vertical bars/pie chart zone to change the mode
-CPUMode=1
+CPUMode=0
 
 ; Query for http://openweathermap.org
 WeatherQ=Lyon,fr
+
 ; Language for http://openweathermap.org
 WeatherLang=fr
+
+; API key for http://openweathermap.org
+WeatherApiKey=
+
 ; Weather icons theme (0=white, 1=colorful)
 ; You can also click on the weather icon to change the theme
-WeatherTheme=0
+WeatherTheme=1
 
 ; Drives letters
 Drive1=B:
