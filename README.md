@@ -11,20 +11,20 @@ Special skin to be displayed on a Galaxy S connected with AirDisplay (or any 800
  * CPU clock + temperature + load
  * Quad core load graphic
  * RAM size + load
- * SWAP size + load
- * Combined RAM + SWAP load graphic
+ * ~~SWAP size + load~~ (removed because useless on recent machines)
+ * RAM load graphic
  * GPU clock + temperature + load
  * GPU load graphic
  * Uptime
+ * Date
  * External IP
  * Ping
  * Download bandwidth graphic
  * Upload bandwidth graphic
- * ~~Total downloaded and uploaded~~ (falsy because AirDisplay bandwidth usage)
+ * ~~Total downloaded and uploaded~~ (removed because of AirDisplay bandwidth usage)
  * Top processes by CPU and RAM usage
  * 3 drives usage graphic + free space
- * Weather with temperature + icon
- * Date
+ * Weather with temperature + icon (require registration on [OpenWeatherMap](http://openweathermap.org))
  * Volume
  * Clock
  
@@ -33,6 +33,3 @@ Special skin to be displayed on a Galaxy S connected with AirDisplay (or any 800
  * Rainmeter 3.2
  * Open Hardware Monitor
  
-
-Weather icons from https://www.iconfinder.com/iconsets/bubbly-weather and http://rainmeter.deviantart.com/art/LG-G3-Widget-469857939.  
-Weather reports from http://www.openweathermap.org.

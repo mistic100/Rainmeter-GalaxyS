@@ -102,24 +102,6 @@ MeterStyle=MainTextStyle | RightTextStyle
 X=790
 Y=5r
 
-;[MeterDownloadTotal]
-;Meter=String
-;MeasureName=MeasureDownloadTotal
-;Text="%1B"
-;Autoscale=1
-;MeterStyle=MainTextStyle | RightTextStyle
-;X=545
-;Y=5R
-
-;[MeterUploadTotal]
-;Meter=String
-;MeasureName=MeasureUploadTotal
-;Text="%1B"
-;Autoscale=1
-;MeterStyle=MainTextStyle
-;X=565
-;Y=0r
-
 
 ; ----------------------------------
 ; TOP PROCESSES DISPLAY
@@ -128,7 +110,7 @@ Y=5r
 [TopIcon]
 Meter=Image
 ImageName=#@#Images\Icons\top.png
-X=545
+X=540
 Y=15R
 
 [TopCPUValue1]
@@ -177,7 +159,7 @@ MeasureName=MeasureTopMemValue1
 AutoScale=1
 Text="%1B"
 MeterStyle=MainTextStyle | SmallTextStyle | RightTextStyle
-X=660
+X=655
 Y=-25r
 H=30
 
@@ -222,7 +204,7 @@ Meter=String
 Text=#Drive1#
 MeterStyle=MainTextStyle
 X=410
-Y=15R
+Y=20R
 
 [Drive1BarBackground]
 Meter=Image
@@ -338,22 +320,13 @@ Y=5r
 ; WEATHER DISPLAY
 ; ----------------------------------
 
-;[MeterWeatherLocation]
-;Meter=String
-;MeasureName=MeasureWeatherCity
-;MeasureName2=MeasureWeatherCountry
-;Text="%1, %2"
-;MeterStyle=MainTextStyle
-;X=530
-;Y=350
-
 [MeterWeatherImage]
 Meter=Image
 MeasureName=MeasureWeatherIcon
 DynamicVariables=1
 ImageName=#@#Images\Weather#WeatherTheme#\%1.png
 X=530
-Y=340
+Y=25R
 W=90
 H=90
 LeftMouseUpAction=[!SetVariable WeatherTheme (1-#WeatherTheme#)][!WriteKeyValue Variables WeatherTheme (1-#WeatherTheme#) "Variables.inc"]
@@ -372,8 +345,8 @@ Meter=String
 MeasureName=MeasureWeatherDesc
 Text="%1"
 MeterStyle=MainTextStyle
-ClipString=2
+ClipString=1
 X=0r
 Y=0R
 W=145
-H=30
+H=60

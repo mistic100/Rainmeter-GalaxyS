@@ -16,7 +16,7 @@ WeatherQ=Lyon,fr
 WeatherLang=fr
 
 ; API key for http://openweathermap.org
-WeatherApiKey=
+WeatherApiKey=316c550395f164daeb1de82845c3ad98
 
 ; Weather icons theme (0=white, 1=colorful)
 ; You can also click on the weather icon to change the theme

@@ -43,15 +43,15 @@ Y=5R
 [MeterCPUGraph]
 Meter=Line
 LineCount=4
-MeasureName=MeasureCPU1Usage
-MeasureName2=MeasureCPU2Usage
-MeasureName3=MeasureCPU3Usage
-MeasureName4=MeasureCPU4Usage
+MeasureName=MeasureCPU4Usage
+MeasureName2=MeasureCPU3Usage
+MeasureName3=MeasureCPU2Usage
+MeasureName4=MeasureCPU1Usage
 MeterStyle=GraphDimension
-LineColor=#CPU1LineColor#
-LineColor2=#CPU2LineColor#
-LineColor3=#CPU3LineColor#
-LineColor4=#CPU4LineColor#
+LineColor=#CPU4LineColor#
+LineColor2=#CPU3LineColor#
+LineColor3=#CPU2LineColor#
+LineColor4=#CPU1LineColor#
 X=0r
 Y=0r
 
@@ -210,31 +210,6 @@ MeterStyle=MainTextStyle
 X=280
 Y=0r
 
-[SWAPIcon]
-Meter=Image
-ImageName=#@#Images\Icons\hdd.png
-X=10
-Y=0R
-
-[MeterSWAPUsage]
-Meter=String
-MeasureName=MeasureSWAPUsage
-MeasureName2=MeasureSWAPTotal
-Autoscale=1
-Text="%1 / %2 GB"
-MeterStyle=MainTextStyle
-X=5R
-Y=0r
-
-[MeterSWAPUsagePercent]
-Meter=String
-MeasureName=MeasureSWAPUsage
-Percentual=1
-Text="%1 %"
-MeterStyle=MainTextStyle
-X=280
-Y=0r
-
 ; graph (need to be separated because not the same scale)
 [RAMGraphBackground]
 Meter=Image
@@ -250,14 +225,6 @@ LineColor=#RAMLineColor#
 X=0r
 Y=0r
 
-[MeterSWAPGraph]
-Meter=Line
-MeasureName=MeasureSWAPUsage
-MeterStyle=GraphDimension
-LineColor=#SWAPLineColor#
-X=0r
-Y=0r
-
 ; bars
 [RAMBarBackground]
 Meter=Image
@@ -270,20 +237,6 @@ Meter=Bar
 MeasureName=MeasureRAMUsage
 MeterStyle=BarDimension
 BarColor=#RAMBarColor#
-X=0r
-Y=0r
-
-[SWAPBarBackground]
-Meter=Image
-MeterStyle=BarDimension | BarBackgroundStyle
-X=5R
-Y=0r
-
-[MeterSWAPBar]
-Meter=Bar
-MeasureName=MeasureSWAPUsage
-MeterStyle=BarDimension
-BarColor=#SWAPBarColor#
 X=0r
 Y=0r
 
@@ -363,12 +316,27 @@ Y=0r
 Meter=Image
 ImageName=#@#Images\Icons\time.png
 X=10
-Y=25R
+Y=15R
 
 [MeterUptime]
 Meter=String
 MeasureName=MeasureUptime
-Text="%1"
 MeterStyle=MainTextStyle
 X=5R
 Y=0r
+
+[CalendarIcon]
+Meter=Image
+ImageName=#@#Images\Icons\calendar.png
+X=10
+Y=10R
+
+[MeterDate]
+Meter=String
+MeasureName=MeasureDate
+MeterStyle=MainTextStyle
+ClipString=2
+X=5R
+Y=0r
+W=275
+H=30

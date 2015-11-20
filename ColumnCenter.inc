@@ -74,17 +74,6 @@ FontColor=0,0,0
 X=400
 Y=414
 
-[MeterDate]
-Meter=String
-MeasureName=MeasureDate
-MeterStyle=MainTextStyle
-StringAlign=Center
-ClipString=2
-X=640
-Y=435
-W=300
-H=30
-
 [FullClockBackground]
 Meter=Image
 SolidColor=0,0,0

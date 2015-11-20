@@ -54,16 +54,6 @@ Measure=PhysicalMemory
 Substitute=" G":""
 Total=1
 
-; SWAP
-[MeasureSWAPUsage]
-Measure=SWAPMemory
-Substitute=" G":""
-
-[MeasureSWAPTotal]
-Measure=SWAPMemory
-Substitute=" G":""
-Total=1
-
 
 ; ----------------------------------
 ; GPU MEASURES
@@ -190,14 +180,6 @@ Measure=NetIn
 [MeasureUpload]
 Measure=NetOut
 
-;[MeasureDownloadTotal]
-;Measure=NetIn
-;Cumulative=1
-
-;[MeasureUploadTotal]
-;Measure=NetOut
-;Cumulative=1
-
 
 ; ----------------------------------
 ; HDD MEASURES
@@ -273,20 +255,6 @@ Plugin=WebParser
 UpdateRate=600
 Url=http://api.openweathermap.org/data/2.5/weather?q=#WeatherQ#&lang=#WeatherLang#&mode=xml&units=metric&appid=#WeatherApiKey#
 RegExp=(?siU)<city.*name="(.*)">.*<country>(.*)</country>.*<temperature value="(.*)".*<weather.*value="(.*)" icon="(.*)"></weather>
-
-;[MeasureWeatherCity]
-;Measure=Plugin
-;Plugin=WebParser
-;Url=[MeasureWeather]
-;StringIndex=1
-;Substitute="":"N/A"
-
-;[MeasureWeatherCountry]
-;Measure=Plugin
-;Plugin=WebParser
-;Url=[MeasureWeather]
-;StringIndex=2
-;Substitute="":"N/A"
 
 [MeasureWeatherTemp]
 Measure=Plugin
