@@ -218,6 +218,14 @@ X=10
 Y=5R
 
 [MeterRAMGraph]
+Meter=Histogram
+MeasureName=MeasureRAMUsage
+MeterStyle=GraphDimension
+PrimaryColor=#RAMGraphColor#
+X=0r
+Y=0r
+
+[MeterRAMLine]
 Meter=Line
 MeasureName=MeasureRAMUsage
 MeterStyle=GraphDimension
@@ -285,6 +293,14 @@ X=10
 Y=5R
 
 [MeterGPUGraph]
+Meter=Histogram
+MeasureName=MeasureGPUUsage
+MeterStyle=GraphDimension
+PrimaryColor=#GPUGraphColor#
+X=0r
+Y=0r
+
+[MeterGPULine]
 Meter=Line
 MeasureName=MeasureGPUUsage
 MeterStyle=GraphDimension
