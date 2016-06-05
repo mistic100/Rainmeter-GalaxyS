@@ -210,7 +210,7 @@ MeterStyle=MainTextStyle
 X=280
 Y=0r
 
-; graph (need to be separated because not the same scale)
+; graph
 [RAMGraphBackground]
 Meter=Image
 MeterStyle=GraphDimension | GraphBackgroundStyle
