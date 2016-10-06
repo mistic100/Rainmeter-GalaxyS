@@ -60,9 +60,18 @@ Meter=String
 MeasureName=MeasureDownload
 Text="%1B/s"
 Autoscale=1
-MeterStyle=MainTextStyle | RightTextStyle
-X=790
+MeterStyle=MainTextStyle
+X=5r
 Y=5r
+
+[MeterDownloadTotal] 
+Meter=String 
+MeasureName=MeasureDownloadTotal 
+Text="%1B" 
+Autoscale=1 
+MeterStyle=MainTextStyle | RightTextStyle 
+X=790 
+Y=0r
 
 ; upload
 [UploadIcon]
@@ -98,10 +107,18 @@ Meter=String
 MeasureName=MeasureUpload
 Text="%1B/s"
 Autoscale=1
-MeterStyle=MainTextStyle | RightTextStyle
-X=790
+MeterStyle=MainTextStyle
+X=5r
 Y=5r
-
+ 
+[MeterUploadTotal] 
+Meter=String 
+MeasureName=MeasureUploadTotal 
+Text="%1B" 
+Autoscale=1 
+MeterStyle=MainTextStyle | RightTextStyle
+X=790 
+Y=0r
 
 ; ----------------------------------
 ; TOP PROCESSES DISPLAY
@@ -228,6 +245,15 @@ LineColor=#HDDLineColor#
 X=0r
 Y=0r
 
+[MeterDrive1Bytes]
+Meter=String
+MeasureName=MeasureDrive1Bytes
+Text="%1B/s"
+Autoscale=1
+MeterStyle=MainTextStyle
+X=5r
+Y=5r
+
 [MeterDrive1Value]
 Meter=String
 MeasureName=MeasureDrive1Free
@@ -235,7 +261,7 @@ Text="%1B"
 Autoscale=1
 MeterStyle=MainTextStyle | RightTextStyle
 X=790
-Y=5r
+Y=0r
 
 ; drive 2
 [Drive2Label]
@@ -267,6 +293,15 @@ LineColor=#HDDLineColor#
 X=0r
 Y=0r
 
+[MeterDrive2Bytes]
+Meter=String
+MeasureName=MeasureDrive2Bytes
+Text="%1B/s"
+Autoscale=1
+MeterStyle=MainTextStyle
+X=5r
+Y=5r
+
 [MeterDrive2Value]
 Meter=String
 MeasureName=MeasureDrive2Free
@@ -274,7 +309,7 @@ Text="%1B"
 Autoscale=1
 MeterStyle=MainTextStyle | RightTextStyle
 X=790
-Y=5r
+Y=0r
 
 ; drive 3
 [Drive3Label]
@@ -306,6 +341,15 @@ LineColor=#HDDLineColor#
 X=0r
 Y=0r
 
+[MeterDrive3Bytes]
+Meter=String
+MeasureName=MeasureDrive3Bytes
+Text="%1B/s"
+Autoscale=1
+MeterStyle=MainTextStyle
+X=5r
+Y=5r
+
 [MeterDrive3Value]
 Meter=String
 MeasureName=MeasureDrive3Free
@@ -313,7 +357,7 @@ Text="%1B"
 Autoscale=1
 MeterStyle=MainTextStyle | RightTextStyle
 X=790
-Y=5r
+Y=0r
 
 
 ; ----------------------------------

@@ -8,6 +8,7 @@ DarkBlue=52,116,155
 Indigo=0,85,136
 Pink=240,65,100
 NvidiaGreen=118,185,0
+Orange=255,120,0
 
 CPU1BarColor=#Blue#,200
 CPU2BarColor=#Green#,200
@@ -36,6 +37,9 @@ HDDLineColor=#Blue#
 
 VolumeBarColor=51,181,229
 VolumeBarBackgroundColor=54,54,54
+
+VUMeterLineColor=#Orange#
+VUMeterBarColor=#Orange#,70
 
 [MainTextStyle]
 FontColor=255,255,255

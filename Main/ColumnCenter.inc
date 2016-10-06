@@ -62,7 +62,7 @@ X=320
 Y=405
 W=160
 H=75
-LeftMouseUpAction=[!ShowMeterGroup "FullClock"]
+LeftMouseUpAction=[!ShowMeterGroup "FullClock"][!Hide GalaxyS\VUMeter]
 
 [MeterClock]
 Meter=String
@@ -83,7 +83,7 @@ W=800
 H=480
 Group=FullClock
 Hidden=1
-LeftMouseUpAction=[!HideMeterGroup "FullClock"]
+LeftMouseUpAction=[!HideMeterGroup "FullClock"][!Show GalaxyS\VUMeter]
 
 [FullMeterClock]
 Meter=String

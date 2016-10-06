@@ -171,7 +171,7 @@ X=280
 Y=45
 W=95
 H=80
-LeftMouseUpAction=[!ToggleMeterGroup "CPUBars"][!ToggleMeterGroup "CPUPies"][!WriteKeyValue Variables CPUMode (1-#CPUMode#) "Variables.inc"]
+LeftMouseUpAction=[!ToggleMeterGroup "CPUBars"][!ToggleMeterGroup "CPUPies"][!WriteKeyValue Variables CPUMode (1-#CPUMode#) "#ROOTCONFIGPATH#Variables.inc"]
 
 [CPUModeAutoToggler]
 Measure=Calc

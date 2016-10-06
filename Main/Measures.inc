@@ -180,6 +180,14 @@ Measure=NetIn
 [MeasureUpload]
 Measure=NetOut
 
+[MeasureDownloadTotal] 
+Measure=NetIn 
+Cumulative=1 
+ 
+[MeasureUploadTotal] 
+Measure=NetOut 
+Cumulative=1 
+
 
 ; ----------------------------------
 ; HDD MEASURES
@@ -244,6 +252,27 @@ PerfMonCounter=% Disk Time
 PerfMonInstance=#Drive3#
 MaxValue=10000000
 
+[MeasureDrive1Bytes]
+Measure=Plugin
+Plugin=PerfMon
+PerfMonObject=LogicalDisk
+PerfMonCounter=Disk Bytes/sec
+PerfMonInstance=#Drive1#
+
+[MeasureDrive2Bytes]
+Measure=Plugin
+Plugin=PerfMon
+PerfMonObject=LogicalDisk
+PerfMonCounter=Disk Bytes/sec
+PerfMonInstance=#Drive2#
+
+[MeasureDrive3Bytes]
+Measure=Plugin
+Plugin=PerfMon
+PerfMonObject=LogicalDisk
+PerfMonCounter=Disk Bytes/sec
+PerfMonInstance=#Drive3#
+
 
 ; ----------------------------------
 ; WEATHER MEASURES
@@ -261,7 +290,7 @@ Measure=Plugin
 Plugin=WebParser
 Url=[MeasureWeather]
 StringIndex=3
-RegExp=([0-9]*)\..*
+RegExp=([0-9]*)\.?.*
 StringIndex2=1
 Substitute="":"N/A"
 
