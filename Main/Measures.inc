@@ -337,8 +337,8 @@ Format="%H:%M:%S"
 
 [MeasureDate]
 Measure=Time
-Format="%a. %#d %B %Y"
-Substitute=#DateTranslation#
+Format="%a %#d %B %Y"
+FormatLocale=Local
 
 [MeasureUptime]
 Measure=Uptime
