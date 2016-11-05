@@ -22,9 +22,6 @@ WeatherApiKey=
 ; You can also click on the weather icon to change the theme
 WeatherTheme=1
 
-; Replace the clock by 3-days forecast
-Forecast=1
-
 ; Drives letters
 Drive1=B:
 Drive2=C:

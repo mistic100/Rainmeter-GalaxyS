@@ -1,6 +1,6 @@
 # Rainmeter GalaxyS
 
-Special skin to be displayed on a Galaxy S connected with AirDisplay (or any 800*480 screen).
+Special skin to be displayed on a 800*480 screen (formerly a Galaxy S connected with AirDisplay).
 
 ![screenshot](Screenshot.png)
 
@@ -9,24 +9,20 @@ Special skin to be displayed on a Galaxy S connected with AirDisplay (or any 800
 ## Indicators
 
  * CPU clock + temperature + load
- * Quad core load graphic
  * RAM size + load
  * ~~SWAP size + load~~ (removed because useless on recent machines)
- * RAM load graphic
  * GPU clock + temperature + load
- * GPU load graphic
  * Uptime
  * Date
  * External IP
  * Ping
- * Download bandwidth graphic
- * Upload bandwidth graphic
- * ~~Total downloaded and uploaded~~ (removed because of AirDisplay bandwidth usage)
+ * Download & upload bandwidth + total
  * Top processes by CPU and RAM usage
- * 3 drives usage graphic + free space
- * Weather with temperature + icon (require registration on [OpenWeatherMap](http://openweathermap.org))
+ * 3 drives usage bandwidth + free space
  * Volume
  * Clock
+ * Weather with temperature + icon + 3-days forecast (require registration on [OpenWeatherMap](http://openweathermap.org))
+ * Left/right RMS bands (separated skin for performances)
  
 ## Requirements
 

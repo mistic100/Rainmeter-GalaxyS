@@ -50,79 +50,6 @@ StringAlign=Center
 X=[VolumeTextPosition]
 Y=-15r
 
-; ----------------------------------
-; FORECAST DISPLAY
-; ----------------------------------
-
-[MeterForecastIcon1]
-Meter=Image
-MeasureName=MeasureForecastIcon1
-DynamicVariables=1
-ImageName=#@#Images\Weather#WeatherTheme#\%1.png
-X=320
-Y=400
-W=45
-H=45
-Hidden=(1- #Forecast#)
-
-[MeterForecastIcon2]
-Meter=Image
-MeasureName=MeasureForecastIcon2
-DynamicVariables=1
-ImageName=#@#Images\Weather#WeatherTheme#\%1.png
-X=12R
-Y=0r
-W=45
-H=45
-Hidden=(1- #Forecast#)
-
-[MeterForecastIcon3]
-Meter=Image
-MeasureName=MeasureForecastIcon3
-DynamicVariables=1
-ImageName=#@#Images\Weather#WeatherTheme#\%1.png
-X=12R
-Y=0r
-W=45
-H=45
-Hidden=(1- #Forecast#)
-
-[MeterForecastTemp1]
-Meter=String
-MeasureName=MeasureForecastTemp1
-Text="%1°C"
-MeterStyle=MainTextStyle
-StringAlign=Center
-FontSize=16
-X=(320 + 45/2)
-Y=5R
-W=45
-Hidden=(1- #Forecast#)
-
-[MeterForecastTemp2]
-Meter=String
-MeasureName=MeasureForecastTemp2
-Text="%1°C"
-MeterStyle=MainTextStyle
-StringAlign=Center
-FontSize=16
-X=12R
-Y=0r
-W=45
-Hidden=(1- #Forecast#)
-
-[MeterForecastTemp3]
-Meter=String
-MeasureName=MeasureForecastTemp3
-Text="%1°C"
-MeterStyle=MainTextStyle
-StringAlign=Center
-FontSize=16
-X=12R
-Y=0r
-W=45
-Hidden=(1- #Forecast#)
-
 
 ; ----------------------------------
 ; TIME DISPLAY
@@ -136,7 +63,6 @@ Y=405
 W=160
 H=75
 LeftMouseUpAction=[!ShowMeterGroup "FullClock"][!Hide GalaxyS\VUMeter]
-Hidden=#Forecast#
 
 [MeterClock]
 Meter=String
@@ -147,7 +73,6 @@ FontSize=40
 FontColor=0,0,0
 X=400
 Y=414
-Hidden=#Forecast#
 
 [FullClockBackground]
 Meter=Image
