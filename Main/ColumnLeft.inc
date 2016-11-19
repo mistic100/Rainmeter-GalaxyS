@@ -181,6 +181,98 @@ IfFalseAction=[!HideMeterGroup "CPUBars"]
 
 
 ; ----------------------------------
+; GPU DISPLAY
+; ----------------------------------
+
+; main line
+[GPUIcon]
+Meter=Image
+ImageName=#@#Images\Icons\gpu.png
+X=10
+Y=15R
+
+[MeterGPUClock]
+Meter=String
+MeasureName=MeasureGPUClock
+Text="%1 MHz"
+MeterStyle=MainTextStyle
+X=5R
+Y=0r
+
+[MeterGPUTemp]
+Meter=String
+MeasureName=MeasureGPUTemp
+Text="%1°C"
+MeterStyle=MainTextStyle | RightTextStyle
+X=275
+Y=0r
+
+[MeterGPUUsage]
+Meter=String
+MeasureName=MeasureGPUUsage
+Percentual=1
+Text="%1 %"
+MeterStyle=MainTextStyle
+X=280
+Y=0r
+
+; graph
+[GPUGraphBackground]
+Meter=Image
+MeterStyle=GraphDimension | GraphBackgroundStyle
+X=10
+Y=5R
+
+[MeterGPUGraph]
+Meter=Histogram
+MeasureName=MeasureGPUUsage
+MeterStyle=GraphDimension
+PrimaryColor=#GPUGraphColor#
+X=0r
+Y=0r
+
+[MeterGPULine]
+Meter=Line
+LineCount=2
+MeasureName=MeasureGPURAMUsage
+MeasureName2=MeasureGPUUsage
+MeterStyle=GraphDimension
+LineColor=#GPURAMLineColor#
+LineColor2=#GPULineColor#
+X=0r
+Y=0r
+
+; bars
+[GPUBarBackground]
+Meter=Image
+MeterStyle=BarDimension | BarBackgroundStyle
+X=10R
+Y=0r
+
+[MeterGPUBar]
+Meter=Bar
+MeasureName=MeasureGPUUsage
+MeterStyle=BarDimension
+BarColor=#GPUBarColor#
+X=0r
+Y=0r
+
+[GPURAMBarBackground]
+Meter=Image
+MeterStyle=BarDimension | BarBackgroundStyle
+X=5R
+Y=0r
+
+[MeterGPURAMBar]
+Meter=Bar
+MeasureName=MeasureGPURAMUsage
+MeterStyle=BarDimension
+BarColor=#GPURAMBarColor#
+X=0r
+Y=0r
+
+
+; ----------------------------------
 ; RAM DISPLAY
 ; ----------------------------------
 
@@ -245,81 +337,6 @@ Meter=Bar
 MeasureName=MeasureRAMUsage
 MeterStyle=BarDimension
 BarColor=#RAMBarColor#
-X=0r
-Y=0r
-
-
-; ----------------------------------
-; GPU DISPLAY
-; ----------------------------------
-
-; main line
-[GPUIcon]
-Meter=Image
-ImageName=#@#Images\Icons\gpu.png
-X=10
-Y=15R
-
-[MeterGPUClock]
-Meter=String
-MeasureName=MeasureGPUClock
-Text="%1 MHz"
-MeterStyle=MainTextStyle
-X=5R
-Y=0r
-
-[MeterGPUTemp]
-Meter=String
-MeasureName=MeasureGPUTemp
-Text="%1°C"
-MeterStyle=MainTextStyle | RightTextStyle
-X=275
-Y=0r
-
-[MeterGPUUsage]
-Meter=String
-MeasureName=MeasureGPUUsage
-Percentual=1
-Text="%1 %"
-MeterStyle=MainTextStyle
-X=280
-Y=0r
-
-; graph
-[GPUGraphBackground]
-Meter=Image
-MeterStyle=GraphDimension | GraphBackgroundStyle
-X=10
-Y=5R
-
-[MeterGPUGraph]
-Meter=Histogram
-MeasureName=MeasureGPUUsage
-MeterStyle=GraphDimension
-PrimaryColor=#GPUGraphColor#
-X=0r
-Y=0r
-
-[MeterGPULine]
-Meter=Line
-MeasureName=MeasureGPUUsage
-MeterStyle=GraphDimension
-LineColor=#GPULineColor#
-X=0r
-Y=0r
-
-; bars
-[GPUBarBackground]
-Meter=Image
-MeterStyle=BarDimension | BarBackgroundStyle
-X=10R
-Y=0r
-
-[MeterGPUBar]
-Meter=Bar
-MeasureName=MeasureGPUUsage
-MeterStyle=BarDimension
-BarColor=#GPUBarColor#
 X=0r
 Y=0r
 

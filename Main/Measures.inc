@@ -76,6 +76,14 @@ Hardware=#MGPU#
 Type=Load
 Sensor=GPU Core
 
+; ram (OHM)
+[MeasureGPURAMUsage]
+Measure=Plugin
+Plugin=Plugins\OpenHardwareMonitorPlugin.dll
+Hardware=#MGPU#
+Type=Load
+Sensor=GPU Memory
+
 ; clock (OHM)
 [MeasureGPUClock]
 Measure=Plugin

@@ -26,6 +26,8 @@ RAMLineColor=#Pink#
 GPUGraphColor=#NvidiaGreen#,70
 GPUBarColor=#NvidiaGreen#,200
 GPULineColor=#NvidiaGreen#
+GPURAMLineColor=#Orange#
+GPURAMBarColor=#Orange#,200
 
 DownloadBarColor=#Blue#,200
 DownloadLineColor=#DarkBlue#

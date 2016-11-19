@@ -11,7 +11,7 @@ Special skin to be displayed on a 800*480 screen (formerly a Galaxy S connected 
  * CPU clock + temperature + load
  * RAM size + load
  * ~~SWAP size + load~~ (removed because useless on recent machines)
- * GPU clock + temperature + load
+ * GPU clock + temperature + load + vram
  * Uptime
  * Date
  * External IP
