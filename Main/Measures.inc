@@ -298,9 +298,9 @@ Measure=Plugin
 Plugin=WebParser
 Url=[MeasureWeather]
 StringIndex=3
-RegExp=([0-9]*)\.?.*
+RegExp=(-?[0-9]*)\.?.*
 StringIndex2=1
-Substitute="":"?"
+Substitute="":"?","-0":"0"
 
 [MeasureWeatherDesc]
 Measure=Plugin
@@ -344,9 +344,9 @@ Measure=Plugin
 Plugin=WebParser
 Url=[MeasureForecastMain]
 StringIndex=4
-RegExp=([0-9]*)\.?.*
+RegExp=(-?[0-9]*)\.?.*
 StringIndex2=1
-Substitute="":"?"
+Substitute="":"?","-0":"0"
 
 [MeasureForecastDesc1]
 Measure=Plugin
@@ -376,9 +376,9 @@ Measure=Plugin
 Plugin=WebParser
 Url=[MeasureForecastMain]
 StringIndex=8
-RegExp=([0-9]*)\.?.*
+RegExp=(-?[0-9]*)\.?.*
 StringIndex2=1
-Substitute="":"?"
+Substitute="":"?","-0":"0"
 
 [MeasureForecastDesc2]
 Measure=Plugin
@@ -408,9 +408,9 @@ Measure=Plugin
 Plugin=WebParser
 Url=[MeasureForecastMain]
 StringIndex=12
-RegExp=([0-9]*)\.?.*
+RegExp=(-?[0-9]*)\.?.*
 StringIndex2=1
-Substitute="":"?"
+Substitute="":"?","-0":"0"
 
 [MeasureForecastDesc3]
 Measure=Plugin
