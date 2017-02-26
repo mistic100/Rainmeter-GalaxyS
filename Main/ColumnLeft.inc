@@ -55,58 +55,12 @@ LineColor4=#CPU1LineColor#
 X=0r
 Y=0r
 
-; piechart
-[CPUPieBackground]
-Meter=Image
-ImageName=#@#Images\Skin\pieBackground.png
-MeterStyle=PieDimension
-X=10R
-Y=0r
-Group=CPUPies
-
-[MeterCPUPie1]
-Meter=Roundline
-MeasureName=MeasureCPU1Usage
-MeterStyle=PieDimension | PieStyle
-LineColor=#CPU1BarColor#
-LineLength=40
-LineStart=30
-Group=CPUPies
-
-[MeterCPUPie2]
-Meter=Roundline
-MeasureName=MeasureCPU2Usage
-MeterStyle=PieDimension | PieStyle
-LineColor=#CPU2BarColor#
-LineLength=30
-LineStart=20
-Group=CPUPies
-
-[MeterCPUPie3]
-Meter=Roundline
-MeasureName=MeasureCPU3Usage
-MeterStyle=PieDimension | PieStyle
-LineColor=#CPU3BarColor#
-LineLength=20
-LineStart=10
-Group=CPUPies
-
-[MeterCPUPie4]
-Meter=Roundline
-MeasureName=MeasureCPU4Usage
-MeterStyle=PieDimension | PieStyle
-LineColor=#CPU4BarColor#
-LineLength=10
-LineStart=0
-Group=CPUPies
-
 ; bars
 [CPU1BarBackground]
 Meter=Image
 MeterStyle=BarDimension | BarBackgroundStyle
 X=0r
 Y=0r
-Group=CPUBars
 
 [MeterCPU1Bar]
 Meter=Bar
@@ -115,14 +69,12 @@ MeterStyle=BarDimension
 BarColor=#CPU1BarColor#
 X=0r
 Y=0r
-Group=CPUBars
 
 [CPU2BarBackground]
 Meter=Image
 MeterStyle=BarDimension | BarBackgroundStyle
 X=5R
 Y=0r
-Group=CPUBars
 
 [MeterCPU2Bar]
 Meter=Bar
@@ -131,14 +83,12 @@ MeterStyle=BarDimension
 BarColor=#CPU2BarColor#
 X=0r
 Y=0r
-Group=CPUBars
 
 [CPU3BarBackground]
 Meter=Image
 MeterStyle=BarDimension | BarBackgroundStyle
 X=5R
 Y=0r
-Group=CPUBars
 
 [MeterCPU3Bar]
 Meter=Bar
@@ -147,14 +97,12 @@ MeterStyle=BarDimension
 BarColor=#CPU3BarColor#
 X=0r
 Y=0r
-Group=CPUBars
 
 [CPU4BarBackground]
 Meter=Image
 MeterStyle=BarDimension | BarBackgroundStyle
 X=5R
 Y=0r
-Group=CPUBars
 
 [MeterCPU4Bar]
 Meter=Bar
@@ -163,21 +111,6 @@ MeterStyle=BarDimension
 BarColor=#CPU4BarColor#
 X=0r
 Y=0r
-Group=CPUBars
-
-[CPUModeToggler]
-Meter=Image
-X=280
-Y=45
-W=95
-H=80
-LeftMouseUpAction=[!ToggleMeterGroup "CPUBars"][!ToggleMeterGroup "CPUPies"][!WriteKeyValue Variables CPUMode (1-#CPUMode#) "#ROOTCONFIGPATH#Variables.inc"]
-
-[CPUModeAutoToggler]
-Measure=Calc
-IfCondition=#CPUMode# = 0
-IfTrueAction=[!HideMeterGroup "CPUPies"]
-IfFalseAction=[!HideMeterGroup "CPUBars"]
 
 
 ; ----------------------------------

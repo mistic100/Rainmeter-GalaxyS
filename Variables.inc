@@ -5,10 +5,6 @@ MCPU=Intel Core i5-4670K
 ; GPU name in Open Hardware Monitor
 MGPU=NVIDIA GeForce GTX 970
 
-; CPU mode (0=bar graphs, 1=pie charts)
-; You can also click on the vertical bars/pie chart zone to change the mode
-CPUMode=0
-
 ; Query for http://openweathermap.org
 WeatherQ=Lyon
 
@@ -19,7 +15,6 @@ WeatherLang=fr
 WeatherApiKey=
 
 ; Weather icons theme (0=white, 1=colorful)
-; You can also click on the weather icon to change the theme
 WeatherTheme=1
 
 ; Drives letters

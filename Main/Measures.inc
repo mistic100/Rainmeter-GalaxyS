@@ -291,13 +291,19 @@ Measure=Plugin
 Plugin=WebParser
 UpdateRate=600
 Url=http://api.openweathermap.org/data/2.5/weather?q=#WeatherQ#&lang=#WeatherLang#&appid=#WeatherApiKey#&mode=xml&units=metric
-RegExp=(?siU)<city.*name="(.*)">.*<country>(.*)</country>.*<temperature value="(.*)".*<weather.*value="(.*)" icon="(.*)"></weather>
+RegExp=(?siU)<city id="(.*)" name="(.*)">.*<country>(.*)</country>.*<temperature value="(.*)".*<weather.*value="(.*)" icon="(.*)"></weather>
+
+[MeasureWeatherCityID]
+Measure=Plugin
+Plugin=WebParser
+Url=[MeasureWeather]
+StringIndex=1
 
 [MeasureWeatherTemp]
 Measure=Plugin
 Plugin=WebParser
 Url=[MeasureWeather]
-StringIndex=3
+StringIndex=4
 RegExp=(-?[0-9]*)\.?.*
 StringIndex2=1
 Substitute="":"?","-0":"0"
@@ -306,14 +312,14 @@ Substitute="":"?","-0":"0"
 Measure=Plugin
 Plugin=WebParser
 Url=[MeasureWeather]
-StringIndex=4
+StringIndex=5
 Substitute="":"?"
 
 [MeasureWeatherIcon]
 Measure=Plugin
 Plugin=WebParser
 Url=[MeasureWeather]
-StringIndex=5
+StringIndex=6
 Substitute="":"00"
 
 [MeasureForecast]

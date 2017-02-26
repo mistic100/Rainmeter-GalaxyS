@@ -373,7 +373,7 @@ X=500
 Y=25R
 W=80
 H=80
-LeftMouseUpAction=[!SetVariable WeatherTheme (1-#WeatherTheme#)][!WriteKeyValue Variables WeatherTheme (1-#WeatherTheme#) "Variables.inc"]
+LeftMouseUpAction=!Execute["https://openweathermap.org/city/[MeasureWeatherCityID]"]
 
 [MeterWeatherTemp]
 Meter=String
