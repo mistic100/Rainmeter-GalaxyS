@@ -10,22 +10,25 @@ Special skin to be displayed on a 800*480 screen (formerly a Galaxy S connected 
 
  * CPU clock + temperature + load
  * RAM size + load
- * ~~SWAP size + load~~ (removed because useless on recent machines)
  * GPU clock + temperature + load + vram
  * Uptime
  * Date
  * External IP
  * Ping
- * Download & upload bandwidth + total
+ * Download & upload bandwidth
  * Top processes by CPU and RAM usage
- * 3 drives usage bandwidth + free space
+ * 4 drives usage bandwidth + free space
  * Volume
  * Clock
  * Weather with temperature + icon + 3-days forecast (require registration on [OpenWeatherMap](http://openweathermap.org))
- * Left/right RMS bands (separated skin for performances)
  
 ## Requirements
 
- * Rainmeter 3.2
+ * Rainmeter 4.1
  * Open Hardware Monitor
- 
+
+## License
+
+Code under MIT License.
+
+Weather icons from https://dribbble.com/shots/2721869-Weather-icons-source-file

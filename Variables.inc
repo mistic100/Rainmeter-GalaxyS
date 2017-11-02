@@ -2,6 +2,7 @@
 
 ; CPU name in Open Hardware Monitor
 MCPU=Intel Core i5-4670K
+
 ; GPU name in Open Hardware Monitor
 MGPU=NVIDIA GeForce GTX 970
 
@@ -21,3 +22,4 @@ WeatherTheme=1
 Drive1=B:
 Drive2=C:
 Drive3=D:
+Drive4=M:
