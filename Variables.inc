@@ -15,9 +15,6 @@ WeatherLang=fr
 ; API key for http://openweathermap.org
 WeatherApiKey=
 
-; Weather icons theme (0=white, 1=colorful)
-WeatherTheme=1
-
 ; Drives letters
 Drive1=B:
 Drive2=C:
