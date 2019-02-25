@@ -23,21 +23,39 @@ Processor=3
 Measure=CPU
 Processor=4
 
+[MeasureCPU5Usage]
+Measure=CPU
+Processor=5
+
+[MeasureCPU6Usage]
+Measure=CPU
+Processor=6
+
+[MeasureCPU7Usage]
+Measure=CPU
+Processor=7
+
+[MeasureCPU8Usage]
+Measure=CPU
+Processor=8
+
 ; Clock (OHM)
 [MeasureCPUClock]
 Measure=Plugin
-Plugin=Plugins\OpenHardwareMonitorPlugin.dll
-Hardware=#MCPU#
-Type=Clocks
-Sensor=CPU Core #1
+Plugin=Plugins\HWiNFO.dll
+HWiNFOSensorId=#CPUClockSensorId#
+HWiNFOSensorInstance=#CPUClockSensorInstance#
+HWiNFOEntryId=#CPUClockEntryId#
+HWiNFOType=CurrentValue
 
 ; Temp (OHM)
 [MeasureCPUTemp]
 Measure=Plugin
-Plugin=Plugins\OpenHardwareMonitorPlugin.dll
-Hardware=#MCPU#
-Type=Temperatures
-Sensor=CPU Package
+Plugin=Plugins\HWiNFO.dll
+HWiNFOSensorId=#CPUTempSensorId#
+HWiNFOSensorInstance=#CPUTempSensorInstance#
+HWiNFOEntryId=#CPUTempEntryId#
+HWiNFOType=CurrentValue
 
 
 ; ----------------------------------
@@ -62,134 +80,139 @@ Total=1
 ; temp (OHM)
 [MeasureGPUTemp]
 Measure=Plugin
-Plugin=Plugins\OpenHardwareMonitorPlugin.dll
-Hardware=#MGPU#
-Type=Temperatures
-Sensor=GPU Core
-MaxValue=100
+Plugin=Plugins\HWiNFO.dll
+HWiNFOSensorId=#GPUTempSensorId#
+HWiNFOSensorInstance=#GPUTempSensorInstance#
+HWiNFOEntryId=#GPUTempEntryId#
+HWiNFOType=CurrentValue
 
 ; load (OHM)
 [MeasureGPUUsage]
 Measure=Plugin
-Plugin=Plugins\OpenHardwareMonitorPlugin.dll
-Hardware=#MGPU#
-Type=Load
-Sensor=GPU Core
+Plugin=Plugins\HWiNFO.dll
+HWiNFOSensorId=#GPUUsageSensorId#
+HWiNFOSensorInstance=#GPUUsageSensorInstance#
+HWiNFOEntryId=#GPUUsageEntryId#
+HWiNFOType=CurrentValue
+MaxValue=100
 
 ; ram (OHM)
 [MeasureGPURAMUsage]
 Measure=Plugin
-Plugin=Plugins\OpenHardwareMonitorPlugin.dll
-Hardware=#MGPU#
-Type=Load
-Sensor=GPU Memory
+Plugin=Plugins\HWiNFO.dll
+HWiNFOSensorId=#GPUMemSensorId#
+HWiNFOSensorInstance=#GPUMemSensorInstance#
+HWiNFOEntryId=#GPUMemEntryId#
+HWiNFOType=CurrentValue
+MaxValue=100
 
 ; clock (OHM)
 [MeasureGPUClock]
 Measure=Plugin
-Plugin=Plugins\OpenHardwareMonitorPlugin.dll
-Hardware=#MGPU#
-Type=Clocks
-Sensor=GPU Core
+Plugin=Plugins\HWiNFO.dll
+HWiNFOSensorId=#GPUClockSensorId#
+HWiNFOSensorInstance=#GPUClockSensorInstance#
+HWiNFOEntryId=#GPUClockEntryId#
+HWiNFOType=CurrentValue
 
 
 ; ----------------------------------
 ; TOP PROCESSES MEASURES
 ; ----------------------------------
 
-[MeasureTopMain]
-Measure=Plugin
-Plugin=Plugins\TopProcesses.dll
-ReQuery=1
-GlobalIgnoredProcesses=Idle|%Total|rundll32|wscript|userinit|dwm|Rainmeter|svchost*|System
-UpdateDivider=30
-
-[MeasureTopCPUValue1]
-Measure=Plugin
-Plugin=Plugins\TopProcesses.dll
-MetricType=CPU
-ProcNums=0
-Format="%RawCPU"
-MaxValue=10000
-
-[MeasureTopCPUValue2]
-Measure=Plugin
-Plugin=Plugins\TopProcesses.dll
-MetricType=CPU
-ProcNums=1
-Format="%RawCPU"
-MaxValue=10000
-
-[MeasureTopCPUValue3]
-Measure=Plugin
-Plugin=Plugins\TopProcesses.dll
-MetricType=CPU
-ProcNums=2
-Format="%RawCPU"
-MaxValue=10000
-
-[MeasureTopCPUName1]
-Measure=Plugin
-Plugin=Plugins\TopProcesses.dll
-MetricType=CPU
-ProcNums=0
-Format="%pName"
-
-[MeasureTopCPUName2]
-Measure=Plugin
-Plugin=Plugins\TopProcesses.dll
-MetricType=CPU
-ProcNums=1
-Format="%pName"
-
-[MeasureTopCPUName3]
-Measure=Plugin
-Plugin=Plugins\TopProcesses.dll
-MetricType=CPU
-ProcNums=2
-Format="%pName"
-
-[MeasureTopMemValue1]
-Measure=Plugin
-Plugin=Plugins\TopProcesses.dll
-MetricType=Memory
-ProcNums=0
-Format="%RawMemory"
-
-[MeasureTopMemValue2]
-Measure=Plugin
-Plugin=Plugins\TopProcesses.dll
-MetricType=Memory
-ProcNums=1
-Format="%RawMemory"
-
-[MeasureTopMemValue3]
-Measure=Plugin
-Plugin=Plugins\TopProcesses.dll
-MetricType=Memory
-ProcNums=2
-Format="%RawMemory"
-
-[MeasureTopMemName1]
-Measure=Plugin
-Plugin=Plugins\TopProcesses.dll
-MetricType=Memory
-ProcNums=0
-Format="%pName"
-
-[MeasureTopMemName2]
-Measure=Plugin
-Plugin=Plugins\TopProcesses.dll
-MetricType=Memory
-ProcNums=1
-Format="%pName"
-
-[MeasureTopMemName3]
-Measure=Plugin
-Plugin=Plugins\TopProcesses.dll
-MetricType=Memory
-ProcNums=2
-Format="%pName"
+;[MeasureTopMain]
+;Measure=Plugin
+;Plugin=Plugins\TopProcesses.dll
+;ReQuery=1
+;GlobalIgnoredProcesses=Idle|%Total|rundll32|wscript|userinit|dwm|Rainmeter|svchost*|System
+;UpdateDivider=30
+;
+;[MeasureTopCPUValue1]
+;Measure=Plugin
+;Plugin=Plugins\TopProcesses.dll
+;MetricType=CPU
+;ProcNums=0
+;Format="%RawCPU"
+;MaxValue=10000
+;
+;[MeasureTopCPUValue2]
+;Measure=Plugin
+;Plugin=Plugins\TopProcesses.dll
+;MetricType=CPU
+;ProcNums=1
+;Format="%RawCPU"
+;MaxValue=10000
+;
+;[MeasureTopCPUValue3]
+;Measure=Plugin
+;Plugin=Plugins\TopProcesses.dll
+;MetricType=CPU
+;ProcNums=2
+;Format="%RawCPU"
+;MaxValue=10000
+;
+;[MeasureTopCPUName1]
+;Measure=Plugin
+;Plugin=Plugins\TopProcesses.dll
+;MetricType=CPU
+;ProcNums=0
+;Format="%pName"
+;
+;[MeasureTopCPUName2]
+;Measure=Plugin
+;Plugin=Plugins\TopProcesses.dll
+;MetricType=CPU
+;ProcNums=1
+;Format="%pName"
+;
+;[MeasureTopCPUName3]
+;Measure=Plugin
+;Plugin=Plugins\TopProcesses.dll
+;MetricType=CPU
+;ProcNums=2
+;Format="%pName"
+;
+;[MeasureTopMemValue1]
+;Measure=Plugin
+;Plugin=Plugins\TopProcesses.dll
+;MetricType=Memory
+;ProcNums=0
+;Format="%RawMemory"
+;
+;[MeasureTopMemValue2]
+;Measure=Plugin
+;Plugin=Plugins\TopProcesses.dll
+;MetricType=Memory
+;ProcNums=1
+;Format="%RawMemory"
+;
+;[MeasureTopMemValue3]
+;Measure=Plugin
+;Plugin=Plugins\TopProcesses.dll
+;MetricType=Memory
+;ProcNums=2
+;Format="%RawMemory"
+;
+;[MeasureTopMemName1]
+;Measure=Plugin
+;Plugin=Plugins\TopProcesses.dll
+;MetricType=Memory
+;ProcNums=0
+;Format="%pName"
+;
+;[MeasureTopMemName2]
+;Measure=Plugin
+;Plugin=Plugins\TopProcesses.dll
+;MetricType=Memory
+;ProcNums=1
+;Format="%pName"
+;
+;[MeasureTopMemName3]
+;Measure=Plugin
+;Plugin=Plugins\TopProcesses.dll
+;MetricType=Memory
+;ProcNums=2
+;Format="%pName"
 
 
 ; ----------------------------------
@@ -200,7 +223,7 @@ Format="%pName"
 Measure=Plugin
 Plugin=WebParser
 UpdateRate=3600
-Url=http://icanhazip.com
+Url=http://ipv4.icanhazip.com
 RegExp=(.*)
 StringIndex=1
 Substitute="":"0.0.0.0"
@@ -270,6 +293,17 @@ Drive=#Drive4#
 InvertMeasure=1
 UpdateDivider=60
 
+[MeasureDrive5Free]
+Measure=FreeDiskSpace
+Drive=#Drive5#
+UpdateDivider=60
+
+[MeasureDrive5Usage]
+Measure=FreeDiskSpace
+Drive=#Drive5#
+InvertMeasure=1
+UpdateDivider=60
+
 ; activity
 [MeasureDrive1Access]
 Measure=Plugin
@@ -303,6 +337,14 @@ PerfMonCounter=% Disk Time
 PerfMonInstance=#Drive4#
 MaxValue=10000000
 
+[MeasureDrive5Access]
+Measure=Plugin
+Plugin=PerfMon
+PerfMonObject=LogicalDisk
+PerfMonCounter=% Disk Time
+PerfMonInstance=#Drive5#
+MaxValue=10000000
+
 [MeasureDrive1Bytes]
 Measure=Plugin
 Plugin=PerfMon
@@ -330,6 +372,13 @@ Plugin=PerfMon
 PerfMonObject=LogicalDisk
 PerfMonCounter=Disk Bytes/sec
 PerfMonInstance=#Drive4#
+
+[MeasureDrive5Bytes]
+Measure=Plugin
+Plugin=PerfMon
+PerfMonObject=LogicalDisk
+PerfMonCounter=Disk Bytes/sec
+PerfMonInstance=#Drive5#
 
 
 ; ----------------------------------
