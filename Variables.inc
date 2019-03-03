@@ -9,7 +9,7 @@ MultipleCPULines=0
 ; HWiNFO Config (https://www.hwinfo.com/forum/Thread-Rainmeter-plug-in-for-HWiNFO-3-2)
 CPUClockSensorId=0xf0000300
 CPUClockSensorInstance=0x0
-CPUClockEntryId=0x6000007
+CPUClockEntryId=0x6000000
 
 CPUTempSensorId=0xf0000400
 CPUTempSensorInstance=0x0

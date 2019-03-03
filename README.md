@@ -25,7 +25,7 @@ Special skin to be displayed on a 800*480 screen (formerly a Galaxy S connected 
 ## Requirements
 
  * Rainmeter 4.1
- * Open Hardware Monitor
+ * HWiNFO
 
 ## License
 
