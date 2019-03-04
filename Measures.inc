@@ -124,7 +124,7 @@ HWiNFOType=CurrentValue
 Measure=Plugin
 Plugin=Plugins\TopProcesses.dll
 ReQuery=1
-GlobalIgnoredProcesses=Idle|%Total|rundll32|wscript|userinit|dwm|Rainmeter|svchost*|System
+GlobalIgnoredProcesses=Idle|%Total|rundll32|wscript|userinit|dwm|Rainmeter|svchost*|System|Memory Compression|WmiPrvSe%|MsMpEng%
 UpdateDivider=30
 
 [MeasureTopCPUValue1]

@@ -9,7 +9,7 @@ Special skin to be displayed on a 800*480 screen (formerly a Galaxy S connected 
 ## Indicators
 
  * CPU clock + temperature + load
- * RAM size + load
+ * RAM size + usage
  * GPU clock + temperature + load + vram
  * Uptime
  * Date
